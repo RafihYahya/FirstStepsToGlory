@@ -8,15 +8,15 @@ const BottomNavigationBar = () => {
     <View style={[styles.botbar, styles.botbartext]}>
       <View style={styles.navbarentry}>
         <House size={28} color='#F5F5F5' />
-        <MyText title='Home' size={12} fontWeight={'normal'} />
+        <MyText title='Home' size={11} fontWeight={'normal'} />
       </View>
       <View style={styles.navbarentry}>
         <MagnifyingGlass size={28} color='#F5F5F5' />
-        <MyText title='Search' size={12} fontWeight={'normal'} />
+        <MyText title='Search' size={11} fontWeight={'normal'} />
       </View>
       <View style={styles.navbarentry}>
         <BookOpen size={28} color='#F5F5F5' />
-        <MyText title='Library' size={12} fontWeight={'normal'} />
+        <MyText title='Library' size={11} fontWeight={'normal'} />
       </View>
     </View>
   )
@@ -30,11 +30,11 @@ const styles = StyleSheet.create({
     bottom: 0,
     width: '100%',
     height: 90,
-    backgroundColor: '#424242',
+    backgroundColor: '#282828',
   },
   
   botbartext: {
-    paddingHorizontal: 28,
+    paddingHorizontal: 36,
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',

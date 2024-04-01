@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { MagnifyingGlass } from 'phosphor-react-native'
 
 export default function TopAppBar() {
     return (
         <View style={styles.appbar}>
             <View style={styles.container}>
+                <View></View>
                 <Text style={styles.text}>Explore</Text>
+                <MagnifyingGlass size={24} color='#F5F5F5' />
             </View>
         </View>
     )
@@ -18,13 +21,15 @@ const styles = StyleSheet.create({
         width: '100%'
     },
     container: {
+        paddingHorizontal:28,
         flex: 1,
-        justifyContent: 'center',
+        flexDirection:'row',
+        justifyContent: 'space-between',
         alignItems: 'center',
     },
     text: {
         color: '#F5F5F5',
-        fontSize:18,
-        fontWeight:'700',
+        fontSize:22,
+        fontWeight:'200',
     }
 })

@@ -2,13 +2,14 @@ import { StyleSheet, Image, Text, View } from 'react-native'
 import React from 'react'
 
 
-const HomeCard = () => {
+
+const HomeCard = (props:any) => {
   return (
     <>
 
       <View style={styles.container}>
-        <Image style={styles.image} source={require('./../../assets/maiimg.jpg')} />
-        <Text style={styles.text}>Konosuba</Text>
+        {props.children}
+        <Text style={styles.text}>{props.title}</Text>
       </View>
 
     </>
@@ -27,20 +28,17 @@ const styles = StyleSheet.create({
     borderRadius: 16,
 
   },
-  image: {
-    position:'absolute',
-    height: '100%',
-    width: '100%',
-    borderRadius: 16,
-    opacity: 0.3
-
-  },
+  
 
   text: {
     
     color:'#F5F5F5',
-    fontSize:20,
-    fontWeight:'200'
+    fontSize:16,
+    fontWeight:'300',
+    textShadowColor:'#212121',
+    textShadowOffset:{width: -1, height: 1},
+    textShadowRadius: 10
+
   }
 
 })

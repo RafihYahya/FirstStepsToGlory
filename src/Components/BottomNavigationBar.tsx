@@ -8,15 +8,15 @@ const BottomNavigationBar = () => {
     <View style={[styles.botbar, styles.botbartext]}>
       <View style={styles.navbarentry}>
         <House size={28} color='#F5F5F5' />
-        <MyText title='Home' size={11} fontWeight={'normal'} />
+        <MyText title='Home' size={11} fontWeight={'300'} />
       </View>
       <View style={styles.navbarentry}>
         <MagnifyingGlass size={28} color='#F5F5F5' />
-        <MyText title='Search' size={11} fontWeight={'normal'} />
+        <MyText title='Search' size={11} fontWeight={'300'} />
       </View>
       <View style={styles.navbarentry}>
         <BookOpen size={28} color='#F5F5F5' />
-        <MyText title='Library' size={11} fontWeight={'normal'} />
+        <MyText title='Library' size={11} fontWeight={'300'} />
       </View>
     </View>
   )

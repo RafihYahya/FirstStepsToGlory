@@ -4,7 +4,7 @@ import React from 'react'
 type TextProp = {
     title: String,
     size: number,
-    fontWeight:"normal"|"bold"
+    fontWeight:"normal"|"bold" |"200" |"300" | "400"
 }
 
 const MyText = (props: TextProp) => {
